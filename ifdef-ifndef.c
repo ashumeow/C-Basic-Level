@@ -1,4 +1,4 @@
-/* #ifdef anf #ifndef functions */
+/* #ifdef and #ifndef functions */
 /* Let's start with syntax! =P */
 /* Syntax for #ifdef
 		#ifdef macro-name
