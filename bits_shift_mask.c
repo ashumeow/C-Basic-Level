@@ -1,5 +1,6 @@
 #include<stdio.h>
 #define number_of_bits 8
+#define getline(meow_string, meow_bytes, stdin)
 int main()
 {
 char *meow_string;
