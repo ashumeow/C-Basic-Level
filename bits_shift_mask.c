@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #define number_of_bits 8
 #define getline(meow_string, meow_bytes, stdin)
 void main()
@@ -13,7 +14,7 @@ meow_input=-1;
 while((meow_args!=1) || (meow_input<0) || (meow_input>128))
 {
 puts("enter an integer from 0 to 128");
-char *meow_string=(char *) malloc(meow_bytes + 1);
+char* meow_string=malloc(meow_bytes + 1);
 getline(&meow_string, &meow_bytes, stdin);
 meow_args=sscanf(meow_string, "%d", &meow_input);
 if((meow_args!=1) || (meow_input<0) || (meow_input>128))
