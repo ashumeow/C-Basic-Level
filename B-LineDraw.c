@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<graphics.h>
-main() {
+void main() {
 	float x, x1, x2, y, y1, y2, dx, dy, e;
 	int i, graphics_draw, graphics_mode;
 	printf("Enter the value of x1: \n");
@@ -26,8 +26,11 @@ main() {
 			y = y + 1;
 			e = e - (2 * dx);
 		}
-		while(i <= dx);
-		getch();
-		closegraph();
+		x = x + 1;
+		e = e + (2 * dy);
+		i = i + 1;
 	}
+	while(i <= dx);
+	getch();
+	closegraph();
 }
